@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════
-   SKILLSIGNAL — Interactions
+   SKILLSIGNAL — Interactions v2
    ═══════════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0.12,
+    rootMargin: '0px 0px -30px 0px'
   });
 
   revealElements.forEach(el => revealObserver.observe(el));
 
 
-  // ── Animated stat counters ──
+  // ── Animated counters (stat cards, big stats, signal metric) ──
   const counterElements = document.querySelectorAll('[data-count]');
 
   const counterObserver = new IntersectionObserver((entries) => {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         counterObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.4 });
 
   counterElements.forEach(el => counterObserver.observe(el));
 
@@ -39,13 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const target = parseFloat(el.dataset.count);
     const suffix = el.dataset.suffix || '';
     const isDecimal = el.dataset.decimal === 'true';
-    const duration = 1800;
+    const duration = 1600;
     const startTime = performance.now();
+
+    // Determine default suffix based on context
+    const hasNoSuffix = !suffix && !isDecimal;
+    const defaultSuffix = hasNoSuffix && el.textContent.includes('%') ? '%' : '';
 
     function tick(now) {
       const elapsed = now - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // Ease-out expo
       const eased = 1 - Math.pow(1 - progress, 4);
       const current = eased * target;
 
@@ -54,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (suffix) {
         el.textContent = Math.round(current) + suffix;
       } else {
-        el.textContent = Math.round(current) + '%';
+        el.textContent = Math.round(current) + defaultSuffix;
       }
 
       if (progress < 1) {
@@ -74,11 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const width = entry.target.dataset.width;
         setTimeout(() => {
           entry.target.style.width = width + '%';
-        }, 200);
+        }, 300);
         barObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.2 });
 
   scoreBars.forEach(bar => barObserver.observe(bar));
 
@@ -94,30 +97,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── "See how it works" button scrolls to #solution ──
-  const ctaBtn = document.querySelector('.hero .btn-primary');
-  if (ctaBtn) {
-    ctaBtn.addEventListener('click', () => {
-      const solution = document.getElementById('solution');
-      if (solution) {
-        solution.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  }
 
-
-  // ── Nav background on scroll ──
+  // ── Nav opacity on scroll ──
   const nav = document.getElementById('nav');
-  let lastScroll = 0;
-
   window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    if (scrollY > 80) {
+    if (window.scrollY > 80) {
       nav.style.background = 'rgba(10, 10, 12, 0.92)';
     } else {
-      nav.style.background = 'rgba(10, 10, 12, 0.7)';
+      nav.style.background = 'rgba(10, 10, 12, 0.65)';
     }
-    lastScroll = scrollY;
   }, { passive: true });
 
 });
