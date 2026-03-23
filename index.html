@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSignal — Proof-of-Work Hiring for Early-Career Talent</title>
+  <meta name="description" content="SkillSignal helps employers hire early-career talent through verified proof of work. Turn projects, portfolios, and challenges into trusted hiring signal.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-dot"></span>
+      SkillSignal
+    </div>
+    <ul class="nav__links">
+      <li><a href="#solution">How It Works</a></li>
+      <li><a href="#ecosystem">Ecosystem</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span class="hero__eyebrow-line"></span>
+        Proof-of-Work Hiring
+      </div>
+      <h1 class="hero__title reveal reveal-delay-1">
+        Hiring is losing<br><em>signal.</em>
+      </h1>
+      <p class="hero__subtitle reveal reveal-delay-2">
+        CVs and AI-generated applications create noise. SkillSignal lets employers hire students and early-career talent based on verified skill evidence — not pedigree and keyword matching.
+      </p>
+      <div class="hero__cta-group reveal reveal-delay-3">
+        <button class="btn-primary">
+          See how it works
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="#why-now" class="btn-secondary">Why now?</a>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-card__number" data-count="63">0%</div>
+        <div class="stat-card__label">of employers cite skill gaps as the biggest barrier</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-card__number" data-count="6.1" data-suffix="×">0×</div>
+        <div class="stat-card__label">talent pool expansion with skills-based hiring</div>
+      </div>
+      <div class="stat-card stat-card--wide reveal reveal-delay-4">
+        <div class="stat-card__number" data-count="59" data-suffix="/100">0</div>
+        <div class="stat-card__label">workers will need reskilling by 2030 according to the World Economic Forum</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROBLEM ═══ -->
+  <section class="problem section--full" id="problem">
+    <div class="problem__inner">
+      <div class="problem__text">
+        <div class="section__eyebrow reveal">The Problem</div>
+        <h2 class="section__headline reveal reveal-delay-1">
+          Early-career hiring runs on <em>weak proxies</em>
+        </h2>
+        <p class="reveal reveal-delay-2">
+          Degrees and CVs are poor indicators of real capability. AI makes applications easier to generate, not easier to trust. Employers need evidence, not more keywords.
+        </p>
+        <blockquote class="problem__pullquote reveal reveal-delay-3">
+          "Skill gaps are the single biggest barrier to business transformation, and current hiring infrastructure still does a poor job of making actual capability visible."
+          <cite>World Economic Forum, 2025</cite>
+        </blockquote>
+      </div>
+
+      <div class="problem__pain-points">
+        <div class="pain-point reveal reveal-delay-1">
+          <div class="pain-point__icon">📄</div>
+          <div class="pain-point__text">
+            <strong>CV theatre.</strong> Polished documents that reveal nothing about real capability or problem-solving approach.
+          </div>
+        </div>
+        <div class="pain-point reveal reveal-delay-2">
+          <div class="pain-point__icon">🤖</div>
+          <div class="pain-point__text">
+            <strong>AI-generated noise.</strong> Every candidate now has a perfect cover letter. The signal-to-noise ratio is collapsing.
+          </div>
+        </div>
+        <div class="pain-point reveal reveal-delay-3">
+          <div class="pain-point__icon">🎓</div>
+          <div class="pain-point__text">
+            <strong>Pedigree bias.</strong> Hiring defaults to university brand and GPA — missing high-capability candidates from non-traditional paths.
+          </div>
+        </div>
+        <div class="pain-point reveal reveal-delay-4">
+          <div class="pain-point__icon">🔍</div>
+          <div class="pain-point__text">
+            <strong>Screening overload.</strong> Recruiters spend hours reviewing hundreds of nearly identical applications for a single junior role.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SOLUTION ═══ -->
+  <section class="section" id="solution">
+    <div class="section__eyebrow reveal">The Solution</div>
+    <h2 class="section__headline reveal reveal-delay-1">
+      Turn real work into <em>trusted hiring signal</em>
+    </h2>
+
+    <div class="solution__grid">
+      <!-- Card 1 — Upload Evidence -->
+      <div class="bento-card bento-card--wide reveal reveal-delay-1">
+        <div class="bento-card__step">1</div>
+        <div class="bento-card__title">Upload Evidence</div>
+        <div class="bento-card__desc">
+          Candidates connect GitHub repos, upload project reports, slide decks, case work, certificates, and portfolio links. Real artifacts — not self-reported bullet points.
+        </div>
+        <div class="bento-card__visual">
+          <div class="code-preview">
+            <span class="hl-bracket">{</span><br>
+            &nbsp;&nbsp;<span class="hl-key">"source"</span>: <span class="hl-str">"github.com/anna/ml-pipeline"</span>,<br>
+            &nbsp;&nbsp;<span class="hl-key">"type"</span>: <span class="hl-str">"repository"</span>,<br>
+            &nbsp;&nbsp;<span class="hl-key">"languages"</span>: <span class="hl-bracket">[</span><span class="hl-str">"Python"</span>, <span class="hl-str">"SQL"</span><span class="hl-bracket">]</span>,<br>
+            &nbsp;&nbsp;<span class="hl-key">"commits"</span>: <span class="hl-str">142</span>,<br>
+            &nbsp;&nbsp;<span class="hl-key">"verified"</span>: <span class="hl-str">true</span><br>
+            <span class="hl-bracket">}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 — Extract Skills -->
+      <div class="bento-card reveal reveal-delay-2">
+        <div class="bento-card__step">2</div>
+        <div class="bento-card__title">Extract &amp; Map Skills</div>
+        <div class="bento-card__desc">
+          Platform parses evidence and maps it to a role-based skills framework. Structured, comparable, inspectable.
+        </div>
+        <div class="skill-tags" style="margin-top: 1.25rem;">
+          <span class="skill-tag skill-tag--active">Python</span>
+          <span class="skill-tag skill-tag--active">Data Modeling</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Git Workflow</span>
+          <span class="skill-tag skill-tag--active">ML Pipelines</span>
+          <span class="skill-tag">API Design</span>
+          <span class="skill-tag">Testing</span>
+        </div>
+      </div>
+
+      <!-- Card 3 — Short Challenge -->
+      <div class="bento-card reveal reveal-delay-3">
+        <div class="bento-card__step">3</div>
+        <div class="bento-card__title">Complete a Challenge</div>
+        <div class="bento-card__desc">
+          A short, role-specific simulation validates applied capability. Not trivia — real tasks that mirror the job.
+        </div>
+        <div class="bento-card__visual" style="margin-top: 1.25rem; text-align: center; padding: 1.5rem 1rem;">
+          <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 0.5rem;">Time Remaining</div>
+          <div style="font-family: var(--font-sans); font-weight: 700; font-size: 2rem; color: var(--accent); letter-spacing: -0.02em;">24:38</div>
+          <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.5rem;">Junior Data Analyst · Case Challenge</div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Recruiter Dashboard -->
+      <div class="bento-card bento-card--wide reveal reveal-delay-4">
+        <div class="bento-card__step">4</div>
+        <div class="bento-card__title">Recruiter Dashboard</div>
+        <div class="bento-card__desc">
+          Employers see a shortlist scored by evidence, not keywords. Inspect proof, compare candidates, hire with confidence.
+        </div>
+        <div class="scorecard-bars" style="margin-top: 1.25rem;">
+          <div class="score-bar">
+            <span class="score-bar__label">Python</span>
+            <div class="score-bar__track"><div class="score-bar__fill" data-width="92"></div></div>
+          </div>
+          <div class="score-bar">
+            <span class="score-bar__label">SQL</span>
+            <div class="score-bar__track"><div class="score-bar__fill score-bar__fill--sage" data-width="78"></div></div>
+          </div>
+          <div class="score-bar">
+            <span class="score-bar__label">Analysis</span>
+            <div class="score-bar__track"><div class="score-bar__fill" data-width="85"></div></div>
+          </div>
+          <div class="score-bar">
+            <span class="score-bar__label">Teamwork</span>
+            <div class="score-bar__track"><div class="score-bar__fill score-bar__fill--sage" data-width="88"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY NOW ═══ -->
+  <section class="section" id="why-now" style="background: var(--bg-panel); max-width: none; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div style="max-width: var(--max-width); margin: 0 auto;">
+      <div class="section__eyebrow reveal">Why Now</div>
+      <h2 class="section__headline reveal reveal-delay-1">
+        The market is shifting to <em>skills-first</em> hiring
+      </h2>
+
+      <div class="why-now__stats">
+        <div class="big-stat reveal reveal-delay-1">
+          <div class="big-stat__number" data-count="63">0%</div>
+          <div class="big-stat__desc">of employers say skill gaps are the biggest barrier to business transformation</div>
+          <div class="big-stat__source">World Economic Forum</div>
+        </div>
+        <div class="big-stat reveal reveal-delay-2">
+          <div class="big-stat__number big-stat__number--sage" data-count="6.1" data-suffix="×" data-decimal="true">0×</div>
+          <div class="big-stat__desc">talent pool expansion when hiring is skills-based rather than credential-based</div>
+          <div class="big-stat__source">LinkedIn Research 2025</div>
+        </div>
+        <div class="big-stat reveal reveal-delay-3">
+          <div class="big-stat__number" data-count="59">0</div>
+          <div class="big-stat__desc">out of 100 workers will need reskilling by 2030. The EU's Union of Skills is pushing change now.</div>
+          <div class="big-stat__source">WEF & European Commission</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ECOSYSTEM ═══ -->
+  <section class="section" id="ecosystem">
+    <div class="section__eyebrow reveal">TVG Ecosystem Fit</div>
+    <h2 class="section__headline reveal reveal-delay-1">
+      The missing layer in a <em>powerful ecosystem</em>
+    </h2>
+
+    <div class="ecosystem__strip">
+      <div class="eco-card reveal">
+        <div class="eco-card__name">Career.io</div>
+        <div class="eco-card__role">Candidate optimisation — helps job seekers build better CVs, cover letters, and search strategies.</div>
+      </div>
+      <div class="eco-card reveal reveal-delay-1">
+        <div class="eco-card__name">Nova</div>
+        <div class="eco-card__role">Curated top-talent network — connects vetted senior professionals with forward-thinking companies.</div>
+      </div>
+      <div class="eco-card reveal reveal-delay-2">
+        <div class="eco-card__name">Thrive</div>
+        <div class="eco-card__role">Psychometric assessments — measures personality, cognitive ability, and job-fit using established frameworks.</div>
+      </div>
+      <div class="eco-card reveal reveal-delay-3">
+        <div class="eco-card__name">Karriärföretagen</div>
+        <div class="eco-card__role">Employer–student bridge — connects top employers with student talent through events and campaigns.</div>
+      </div>
+      <div class="eco-card reveal reveal-delay-4">
+        <div class="eco-card__name">Nominator</div>
+        <div class="eco-card__role">Referral-driven hiring — turns employee referrals into structured, reward-based hiring signal.</div>
+      </div>
+      <div class="eco-card eco-card--signal reveal reveal-delay-5">
+        <div class="eco-card__name" style="color: var(--accent);">SkillSignal</div>
+        <div class="eco-card__role">The proof-of-work layer — converts real projects, coursework, and challenges into verified, inspectable hiring signal for early-career talent.</div>
+        <div class="eco-card__arrow">
+          The missing piece
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ROADMAP ═══ -->
+  <section class="section" id="roadmap">
+    <div class="section__eyebrow reveal">Summer Execution</div>
+    <h2 class="section__headline reveal reveal-delay-1">
+      12 weeks from <em>thesis to pilot</em>
+    </h2>
+
+    <div class="roadmap__timeline">
+      <div class="roadmap__phase reveal reveal-delay-1">
+        <div class="roadmap__dot"></div>
+        <div class="roadmap__weeks">Weeks 1–2</div>
+        <div class="roadmap__phase-title">Discovery &amp; Validation</div>
+        <div class="roadmap__phase-desc">25–30 user interviews with recruiters, university career teams, and students. Validate pain, test willingness to adopt a new workflow.</div>
+      </div>
+      <div class="roadmap__phase reveal reveal-delay-2">
+        <div class="roadmap__dot"></div>
+        <div class="roadmap__weeks">Weeks 3–4</div>
+        <div class="roadmap__phase-title">Rubric &amp; Manual Prototype</div>
+        <div class="roadmap__phase-desc">Define first role family (e.g. Junior Data Analyst). Build rubric, manual skill-mapping prototype, test with real student portfolios.</div>
+      </div>
+      <div class="roadmap__phase reveal reveal-delay-3">
+        <div class="roadmap__dot"></div>
+        <div class="roadmap__weeks">Weeks 5–8</div>
+        <div class="roadmap__phase-title">Build MVP</div>
+        <div class="roadmap__phase-desc">Ship candidate evidence flow + recruiter dashboard. Lean stack, fast iteration, weekly user check-ins.</div>
+      </div>
+      <div class="roadmap__phase reveal reveal-delay-4">
+        <div class="roadmap__dot"></div>
+        <div class="roadmap__weeks">Weeks 9–12</div>
+        <div class="roadmap__phase-title">Pilot &amp; Iterate</div>
+        <div class="roadmap__phase-desc">Onboard pilot employers and candidates. Measure interview-conversion rate. Iterate based on real usage. Demo + early metrics at Demo Day.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA / CLOSE ═══ -->
+  <section class="cta-section" id="cta">
+    <h2 class="cta-section__headline reveal">
+      A very specific missing layer<br>in <em>modern hiring.</em>
+    </h2>
+    <p class="cta-section__sub reveal reveal-delay-1">
+      Not a full hiring suite. A focused proof-of-work layer that makes skills visible and trustworthy for early-career talent. It fits where the labour market is going, it fits the TVG ecosystem, and it is small enough to validate properly over one summer.
+    </p>
+    <div class="reveal reveal-delay-2">
+      <button class="btn-primary" style="font-size: 0.95rem; padding: 1rem 2.5rem;">
+        Let's build it together
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    SkillSignal © 2025 · Proof-of-Work Hiring for Early-Career Talent
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
